@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloud Portfolio | Sri Hari</title>
+
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --secondary: #6366f1;
+      --dark: #0f172a;
+      --light: #f8fafc;
+      --gray: #94a3b8;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 28px;
+      background: white;
+      color: var(--primary);
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: var(--dark);
+      color: white;
+    }
+
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: var(--primary);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Hi, I'm Sri Hari 👋</h1>
+    <p>AWS Certified Cloud Engineer | DevOps Enthusiast | CI/CD Specialist</p>
+    <a href="#projects" class="btn">View Projects</a>
+  </header>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p style="text-align:center; max-width:700px; margin:auto; color: var(--gray);">
+      Passionate cloud professional with hands-on experience in AWS, Terraform,
+      GitHub Actions, EC2 deployments, and S3 static hosting.
+      I build scalable, secure, and automated cloud solutions.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>CI/CD Deployment</h3>
+        <p>Automated frontend deployment to AWS S3 using GitHub Actions.</p>
+      </div>
+
+      <div class="card">
+        <h3>Terraform EC2 Setup</h3>
+        <p>Provisioned EC2 + Security Groups using Infrastructure as Code.</p>
+      </div>
+
+      <div class="card">
+        <h3>VPC + S3 Endpoint</h3>
+        <p>Configured private networking with secure S3 access.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div style="text-align:center;">
+      <p>Email: your-email@example.com</p>
+      <p>GitHub: github.com/yourusername</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Sri Hari | Built with ❤️ on AWS</p>
+  </footer>
+
+</body>
+</html>
